@@ -64,7 +64,7 @@ function updateform(){
  
 function validateform(){
     validate=true;
-    var validate_form=document.querySelectorAll(".main.active input");
+    var validate_form=document.querySelectorAll(".main.active #input");
     validate_form.forEach(function(val){
         val.classList.remove('warning');
         if(val.hasAttribute('require')){
@@ -75,6 +75,8 @@ function validateform(){
         }
     });
     return validate;
+
+    
 }
 
 
