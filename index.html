@@ -32,11 +32,11 @@
                    <p> سيتم عرض بعض الأسئلة لأغراض تطوير بيئة لجان نادي أدِيب   </p>
                 </div>
                 <div class="input-text">
-                    <input type="text" placeholder=" اسم القائد " id="full-name" name="الأسم" require>
+                    <input type="text" id="input" placeholder=" اسم القائد " id="full-name" name="الأسم" require>
                     <span>اسم القائد</span>
                 </div>
 
-                <select id="adeabTeam" name="اللجنة" require>
+                <select id="input" class="adeabTeam" name="اللجنة" require>
                   <option value="">ماهي لجنتك؟</option>
                   <option value="لجنة السُفراء"> ✉️لجنة السُفراء </option>
                   <option value="لجنة صناعة المحتوى"> 📝لجنة صناعة المحتوى </option>
@@ -61,22 +61,22 @@
                 </div> 
 
                 <div class="input-text">
-                  <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="عرف لنا من منظورك ماهي لجنتك؟" require></textarea>
+                  <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="عرف لنا من منظورك ماهي لجنتك؟" require></textarea>
                   <span>عرف لنا من منظورك ماهي لجنتك؟</span>
               </div>
 
               <div class="input-text">
-                <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="لماذا أدِيب بحاجة للجنتك؟" require></textarea>
+                <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="لماذا أدِيب بحاجة للجنتك؟" require></textarea>
                 <span>لماذا أدِيب بحاجة للجنتك؟</span>
             </div>
 
             <div class="input-text">
-              <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="ماهي نقاط القوة والضعف بلجنتك؟" require></textarea>
+              <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="ماهي نقاط القوة والضعف بلجنتك؟" require></textarea>
               <span>ماهي نقاط القوة والضعف بلجنتك؟</span>
           </div>
 
           <div class="input-text">
-            <input type="number" placeholder=" التقييم من 1 -10 " id="full-name" name="كم تقيم مستوى إنتاجية لجنتك طول الترم الأول؟" require>
+            <input type="number" id="input" placeholder=" التقييم من 1 -10 " id="full-name" name="كم تقيم مستوى إنتاجية لجنتك طول الترم الأول؟" require>
             <span> كم تقيم مستوى إنتاجية لجنتك طول الترم الأول؟ </span>
         </div>
 
@@ -96,31 +96,31 @@
         </div>
 
         <div class="input-text">
-          <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="ماهو احتياج لجنتك منك كقائد للجنة؟" require></textarea>
+          <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="ماهو احتياج لجنتك منك كقائد للجنة؟" require></textarea>
           <span>ماهو احتياج لجنتك منك كقائد للجنة؟</span>
       </div>
 
       <div class="input-text">
-        <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="ماهي حاجتك من النادي لِتطور لجنتك؟" require></textarea>
+        <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="ماهي حاجتك من النادي لِتطور لجنتك؟" require></textarea>
         <span>ماهي حاجتك من النادي لِتطور لجنتك؟
         </span>
     </div>
 
     <div class="input-text">
-      <textarea type="text" placeholder=" هذه المساحه لك " id="full-name" name="ماهي خُططك التطويرية للترم الجاي؟" require></textarea>
+      <textarea type="text" id="input" placeholder=" هذه المساحه لك " id="full-name" name="ماهي خُططك التطويرية للترم الجاي؟" require></textarea>
       <span>ماهي خُططك التطويرية للترم الجاي؟
       </span>
   </div>
 
   <div class="input-text">
-    <textarea type="text" placeholder=" التقييم من 1 -10 ولماذا" id="full-name" name="مدى رضاك عن عملك كقائد من 10 ولماذا؟" require></textarea>
+    <textarea type="text" id="input" placeholder=" التقييم من 1 -10 ولماذا" id="full-name" name="مدى رضاك عن عملك كقائد من 10 ولماذا؟" require></textarea>
     <span>مدى رضاك عن عملك كقائد من 10 ولماذا؟
     </span>
 </div>
         
         <div class="button button_gap1">
             <button class="back-click">الرجوع للخلف</button>
-            <button class="finish-click" name="submit">تم، خلصت</button>
+            <button class="next-click" name="submit">تم، خلصت</button>
         </div>
 
        </div> 
@@ -150,6 +150,7 @@
   </form>
 
       <script src="script.js"></script>
+      <script src="script1.js"></script>
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz9gbPjlEQOQ57MBX8tXSy_6sMPNWWHuARLPcGtYp0PxS1-2fZCSbATp8H526x6CaJs/exec'
         const form = document.forms['MyGroup']
